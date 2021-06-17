@@ -1,0 +1,13 @@
+i.icon{
+    font-size: 2em;
+    
+    font-weight: normal;
+}
+.container.main
+{
+    margin-top: 7.0em;
+}
+#delete-form
+{
+    display: inline;
+}
