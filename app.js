@@ -4,7 +4,7 @@ var bodyParser = require("body-parser"),
   mongoose = require("mongoose"),
   express = require("express"),
   app = express();
-
+const port = process.env.PORT || 8000;
 // App config
 mongoose.connect("mongodb://localhost/restful_blog_app");
 app.set("view engine", "ejs");
@@ -112,7 +112,7 @@ app.delete("/blog/:id", (_req, res) => {
   })
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("server is running");
 });
 
